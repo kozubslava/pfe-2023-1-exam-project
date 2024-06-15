@@ -6,10 +6,11 @@ const cors = require('cors');
 require('./dbMongo/mongoose');
 const router = require('./router');
 const controller = require('./socketInit');
-const handlerError = require('./handlerError/handler');
 const multerHandlerError = require('./handlerError/multerHandler');
+const handlerError = require('./handlerError/handler');
 const { DEV_FILES_PATH, PROD_FILES_PATH } = require('./constants');
 const env = process.env.NODE_ENV || 'development';
+
 const PORT = process.env.PORT || 3000;
 const app = express();
 
@@ -20,6 +21,7 @@ app.use(
   express.static(env === 'production' ? PROD_FILES_PATH : DEV_FILES_PATH)
 );
 app.use(router);
+
 app.use(multerHandlerError);
 app.use(handlerError);
 
