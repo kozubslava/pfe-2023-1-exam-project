@@ -1,9 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 const multer = require('multer');
-const { array } = require('yup');
 const env = process.env.NODE_ENV || 'development';
-const {DEV_FILES_PATH, PROD_FILES_PATH} = require ('../constants')
+const { DEV_FILES_PATH, PROD_FILES_PATH } = require('../constants');
 
 const devImagesPath = path.resolve(DEV_FILES_PATH, 'images');
 const devContestsPath = path.resolve(DEV_FILES_PATH, 'contests');
@@ -48,6 +47,6 @@ const multerImagesInstanse = multer({ storage: storageImageFiles });
 const multerContestsInstanse = multer({ storage: storageContestFiles });
 
 module.exports.uploadAvatar = multerImagesInstanse.single('file');
-module.exports.uploadContestFiles = multerContestsInstanse.array('file', 3);
+module.exports.uploadContestFiles = multerContestsInstanse.array('files', 3);
 module.exports.updateContestFile = multerContestsInstanse.single('file');
 module.exports.uploadLogoFiles = multerContestsInstanse.single('offerData');
