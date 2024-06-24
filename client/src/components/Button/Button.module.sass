@@ -1,0 +1,28 @@
+.button
+  display: flex
+  align-items: center
+  background-image: linear-gradient(-45deg, #5A73ED 0%, #3D57D5 100%)
+  border-radius: 8px
+  padding: 13px 20px
+  color: rgb(255, 255, 255)
+  font-weight: 700
+  text-decoration: none
+
+  &:hover
+    background: linear-gradient(45deg, #5A73ED 0%, #3D57D5 100%)
+  &:hover .icon
+    right: -5px
+
+  .iconWrapper
+    width: 35px
+    height: 25px
+    margin-left: 10px
+    position: relative
+
+  .icon
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    right: 0
+    transition: all 500ms
