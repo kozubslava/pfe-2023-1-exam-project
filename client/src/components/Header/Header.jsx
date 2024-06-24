@@ -125,7 +125,7 @@ class Header extends React.Component {
             <div className={styles.nav}>
               <ul>
                 <li>
-                  <span>NAME IDEAS</span>
+                  <span>Name Ideas</span>
                   <img
                     src={`${CONSTANTS.STATIC_IMAGES_PATH}menu-down.png`}
                     alt="menu"
@@ -158,32 +158,36 @@ class Header extends React.Component {
                   </ul>
                 </li>
                 <li>
-                  <span>CONTESTS</span>
+                  <span>Contests</span>
                   <img
                     src={`${CONSTANTS.STATIC_IMAGES_PATH}menu-down.png`}
                     alt="menu"
                   />
                   <ul>
                     <li>
-                      <a href="http://www.google.com">HOW IT WORKS</a>
+                      <Link
+                      exact to = '/how-it-works'
+                      >
+                      How it works
+                      </Link>
                     </li>
                     <li>
-                      <a href="http://www.google.com">PRICING</a>
+                      <a href="http://www.google.com">Pricing</a>
                     </li>
                     <li>
-                      <a href="http://www.google.com">AGENCY SERVICE</a>
+                      <a href="http://www.google.com">Agency service</a>
                     </li>
                     <li>
-                      <a href="http://www.google.com">ACTIVE CONTESTS</a>
+                      <a href="http://www.google.com"> Active contests</a>
                     </li>
                     <li>
-                      <a href="http://www.google.com">WINNERS</a>
+                      <a href="http://www.google.com">Winners</a>
                     </li>
                     <li>
-                      <a href="http://www.google.com">LEADERBOARD</a>
+                      <a href="http://www.google.com">Leaderboard</a>
                     </li>
                     <li className={styles.last}>
-                      <a href="http://www.google.com">BECOME A CREATIVE</a>
+                      <a href="http://www.google.com">Become a creative</a>
                     </li>
                   </ul>
                 </li>
