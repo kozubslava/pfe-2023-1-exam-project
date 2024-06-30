@@ -19,6 +19,7 @@
     "react-confirm-alert": "^3.0.6",
     "react-credit-cards-2": "^1.0.1",
     "react-dom": "^18.2.0",
+    "react-fancybox": "^0.2.5",
     "react-flickity-component": "^4.0.7",
     "react-icons": "^4.7.1",
     "react-input-mask": "^2.0.4",
