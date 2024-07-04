@@ -1,0 +1,36 @@
+.item
+  // display: flex
+  // flex-direction: column
+  background-color: white
+  padding: 25px
+  box-shadow: 0 16px 32px rgb(0 0 0 / .06)
+  border-radius: 24px
+  position: relative
+  min-height: 260px
+
+  &::before
+    background-image: url(../../../public/staticImages/arrow-right.svg)
+    background-repeat: no-repeat
+    box-sizing: border-box
+    color: rgb(52, 52, 52)
+    content: ""
+    display: block
+    height: 14px
+    width: 28px
+    position: absolute
+    top: 50%
+    right: -14px
+    z-index: 1
+
+.stepIndicator
+  background-color: rgb(73, 66, 243)
+  border-radius: 20px
+  box-sizing: border-box
+  color: rgb(255, 255, 255)
+  font-size: 14px
+  font-weight: 700
+  height: 32px
+  line-height: 32px
+  margin-bottom: 15px
+  padding: 8px 15px
+  text-align: center
