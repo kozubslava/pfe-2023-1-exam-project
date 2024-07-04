@@ -1,8 +1,9 @@
 import React from 'react';
-import styles from './SquadhelpUsageExample.module.sass'
+import styles from './MethodItem.module.sass'
 import Button from '../Button/Button';
 
-const SquadhelpUsageExample = ({ link, text, image, description, title, buttonName }) => {
+
+const MethodItem = ({ link, text, image, description, title, buttonName }) => {
   return (
     <div className={styles.heroSection}>
       <img src = {image} alt = {description}/>
@@ -18,4 +19,4 @@ const SquadhelpUsageExample = ({ link, text, image, description, title, buttonNa
   );
 }
 
-export default SquadhelpUsageExample;
+export default MethodItem;
