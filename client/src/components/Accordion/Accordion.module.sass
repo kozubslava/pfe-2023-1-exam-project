@@ -1,0 +1,49 @@
+.accordion
+  border-radius: 16px
+  margin: 10px 0
+  border: 1px solid #F3F5FE
+  overflow: hidden
+
+  &:hover
+    background-color: #F3F5FE
+    border: 1px solid #377dff
+
+.accordionHeade
+  padding: 24px
+  font-size: 20px
+  font-weight: 700
+  cursor: pointer
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.accordionContent
+  padding: 0px
+  font-size: 16px
+  font-weight: 400
+  line-height: 24px
+  max-height: 0
+  overflow: hidden
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out
+
+.accordion-header h3
+  margin: 0 24 0 0
+
+.accordion-header span
+  font-size: 24px
+
+.icon
+  transform: rotate(45deg)
+  transition: transform 0.3s
+
+.accordion.open
+  background-color: #307DF6
+  color: #fff
+
+  .accordionContent
+    padding: 20px 24px 30px 24px
+    max-height: 500px
+    padding-top: 20px
+
+  .icon
+    transform: rotate(0)
